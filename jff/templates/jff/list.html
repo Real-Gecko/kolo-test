@@ -1,0 +1,12 @@
+<a href="/">Index</a>
+<a href="create/">New</a>
+<hr>
+<ul>
+    {% for object in object_list %}
+        <li>
+            <a href="{{ object.id }}/update/">
+                {{ object }}
+            </a>
+        </li>
+    {% endfor %}
+</ul>
